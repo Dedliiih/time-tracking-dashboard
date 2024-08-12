@@ -1,0 +1,71 @@
+:root {
+	--blue: hsl(246, 80%, 60%);
+	--dark-blue: hsl(235, 46%, 20%);
+	--soft-blue: hsl(195, 74%, 62%);
+	--pale-blue: hsl(236, 100%, 87%);
+	--desaturated-blue: hsl(235, 45%, 61%);
+}
+
+html {
+	font-family: 'Rubik', 'sans-serif';
+}
+
+.dashboard-profile {
+	background-color: var(--dark-blue);
+	border-radius: 10px;
+}
+
+.dashboard-profile-info {
+	background-color: var(--blue);
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	width: 100%;
+	min-height: 40vh;
+}
+
+.dashboard-profile-info > img {
+	width: 4rem;
+	border: solid 2px white;
+	border-radius: 35px;
+	margin: 20px;
+}
+
+.dashboard-profile-info > span {
+	color: var(--soft-blue);
+	font-size: 0.7rem;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: -20px;
+}
+
+.dashboard-profile-info > h2 {
+	font-weight: 300;
+	font-size: 30px;
+	color: var(--pale-blue);
+	width: 50%;
+	margin-left: 20px;
+	margin-right: -40px;
+}
+
+.dashboard-profile-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 0%;
+	padding: 20px;
+}
+
+.dashboard-profile-buttons > button {
+	background: none;
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+	padding-top: 0.7rem;
+	color: var(--desaturated-blue);
+	font-weight: 300;
+}
+
+.dashboard-profile-buttons > button:hover {
+	color: var(--pale-blue);
+}

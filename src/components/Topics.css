@@ -1,0 +1,69 @@
+:root {
+	--dark-blue: hsl(235, 46%, 20%);
+	--desaturated-blue: hsl(235, 45%, 61%);
+}
+
+.topics {
+	display: grid;
+	place-items: center;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
+	gap: 1rem;
+	padding-left: 20px;
+}
+
+.topic-box {
+	position: relative;
+	width: 100%;
+	background-color: var(--dark-blue);
+	border-radius: 10px;
+}
+
+.topic-image {
+	display: flex;
+	justify-content: end;
+	height: 5vh;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.topic-image > img {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+}
+
+.topic-content {
+	position: relative;
+	padding: 20px;
+}
+
+.topic-name {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.topic-name > strong {
+	color: #fff;
+	font-weight: 400;
+}
+
+.topic-name > img {
+	padding-left: 50px;
+}
+
+.topic-hours {
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 100;
+	padding: 12px 0 10px 0;
+}
+
+.topic-last {
+	color: var(--desaturated-blue);
+	font-size: 0.8rem;
+}
